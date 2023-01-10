@@ -1,0 +1,123 @@
+.containerMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.containerCard {
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    border-inline: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-bottom-color: var(--green-500); ;
+    margin-top: 1rem;
+}
+.wrapperImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperImg strong {
+    text-align: center;
+}
+.wrapperImg img {
+    border: 1px solid var(--white);
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+
+.wrapperInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.wrapperInput label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperInput label span {
+    margin-right: 0.5rem;
+    margin-top: 0.30rem;
+}
+
+.containerList {
+    display: grid;
+    grid-template-columns: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contaienrBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contaienrBtns span{
+    margin-left: 4px;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.contaienrBtns button {
+    border: 1px solid var(--green-500);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-500);
+    transition: 0.5s;
+}
+.contaienrBtns button:hover {
+    border: 1px solid var(--green-400);
+
+    background-color: var(--green-400);
+}
+
+@media screen and (max-width: 425px) {
+    .containerCard {
+        width: 20rem; 
+    }
+    
+    .containerMain {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .containerCard {
+        width: 18rem; 
+    }
+    
+    .containerMain {
+        font-size: 0.70rem;
+    }
+}

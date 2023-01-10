@@ -1,0 +1,31 @@
+.stage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.stageTrue{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--green-500);
+    border-radius: 16px;
+    background-color: var(--green-500);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.stageFalse{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black);
+    border-radius: 16px;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}

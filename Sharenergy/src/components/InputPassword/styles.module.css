@@ -1,0 +1,27 @@
+.containerInput {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--green-400);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.containerInput input {
+    border: 0;
+    outline: 0;
+}
+
+@media screen and (max-width: 375px){
+    .containerInput input {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .containerInput input {
+        font-size: 0.7rem;
+    }
+}

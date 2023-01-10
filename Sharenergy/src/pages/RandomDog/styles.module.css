@@ -1,0 +1,42 @@
+.containerMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImg {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImg strong {
+    margin: 1rem;
+    color: var(--green-500);
+}
+
+.containerImg img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+}
+
+.containerImg button {
+    margin-top: 2rem;
+    border: 0;
+    border: 1px solid var(--green-500);
+    background-color: var(--green-500) ;
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.containerImg button:hover {
+    border: 1px solid var(--green-400);
+    background-color: var(--green-400);
+}

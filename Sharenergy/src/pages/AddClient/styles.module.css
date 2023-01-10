@@ -1,0 +1,81 @@
+.containerMain{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.containerContent {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCard {
+    overflow: auto;
+    display: flex;
+    width: 28rem;
+    height: 36rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.containerCard strong {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.wrapperHeader {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.btnNext {
+    cursor: pointer;
+    border: 1px solid var(--green-500);
+    border-radius: 4px;
+    background-color: var(--green-500);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    transition: 0.5s;
+}
+
+.btnNext:hover {
+    border-color: var(--green-400);
+    background-color: var(--green-400);
+}
+
+
+.wrapperLabels label{
+    margin-top: 0.2rem;
+    color: var(--black);
+}
+
+
+@media screen and (max-width: 425px) {
+    .containerCard {
+        width: 24rem;
+        height: 36rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .containerCard {
+        width: 20rem;
+        height: 36rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .containerCard {
+        width: 18rem;
+        height: 36rem;
+    }
+}

@@ -1,0 +1,29 @@
+.btnClose {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--red-600);
+    border-radius: 4px;
+    background-color: var(--red-600);
+    margin-left: 8px;
+    transition: 0.5s;
+}
+
+.btnClose:hover {
+    border-color: var(--red-500);
+    background-color: var(--red-500);
+}
+
+@media screen and (max-width: 375px){
+    .btnClose {
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .btnClose {
+        padding: 0.25rem;
+    }
+}

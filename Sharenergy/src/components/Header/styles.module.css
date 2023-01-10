@@ -1,0 +1,162 @@
+.header {
+    width: 100%;
+    background-color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    transition: all 0.3s ease-in;
+}
+
+.header img {
+    height: 2rem;
+}
+
+.header strong {
+    margin-left: 1rem;
+}
+
+.containerLogo {
+    display: flex;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuContainer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.loginBtn {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    background-color: var(--gray-800);
+    transition: 0.3s;
+}
+
+.loginBtn li:hover {
+    background-color: #111;
+}
+
+
+.nav li {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    background-color: var(--gray-800);
+    transition: 0.3s;
+}
+
+.nav li:hover {
+    background-color: #111;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.listBtn {
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    display: none;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    background-color: var(--gray-800);
+    transition: 0.3s;
+}
+
+/* menu open */
+
+.headerOpen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green-300);
+    position: absolute;
+    z-index: 1;
+    transition: all 0.5s ease-in;
+}
+
+
+.headerOpen img {
+    height: 2rem;
+}
+
+
+.wrapperMenuburguerOpen {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+.navOpen li {
+    display: block;
+    flex-direction: column;
+    margin: 4rem 0 4rem 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    background-color: var(--gray-800);
+    transition: 0.3s;
+}
+
+.listBtnOpen {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav li {
+        display: none;
+    }
+
+    .loginBtn {
+        display: none;
+    }
+
+    .wrapperMenuburguer {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .listBtn {
+        display: block;
+    }
+    
+}

@@ -1,0 +1,24 @@
+.containerInput {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--green-400);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.containerInput input {
+    border: 0;
+    outline: 0;
+}
+
+.btn {
+    border:0;
+    cursor: pointer;
+    background-color: var(--green-500);
+}
+.btn:hover {
+    background-color: var(--green-400);
+}

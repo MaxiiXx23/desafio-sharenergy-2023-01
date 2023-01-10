@@ -1,0 +1,149 @@
+.containerMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.containerList strong{
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+    color: var(--green-500);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    width: 24rem;
+    height: 12rem;
+}
+
+.wrapperHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.wrapperBtns {
+    display: flex;
+    align-items: center;
+    width: 24%;
+    justify-content: space-between;
+}
+
+.btnEdit {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--yellow-500);
+    border-radius: 4px;
+    background-color: var(--yellow-500);
+    transition: 0.5s;
+}
+
+.btnEdit:hover {
+    border-color: var(--yellow-300);
+    background-color: var(--yellow-300);  
+}
+
+
+.wrapperInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelInfo{
+   color: var(--green-500);
+}
+
+.wrapperAddress {
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperAddress span{
+    margin-right: 4px;
+}
+
+.btnAddress {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--green-500);
+    border-radius: 4px;
+    background-color: var(--green-500);
+    transition: 0.5s;
+}
+
+.btnAddress:hover {
+    border-color: var(--green-400);
+    background-color: var(--green-400); 
+}
+
+.wrapperAdd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperAdd span {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 375px){
+    .card{
+        width: 20rem;
+        height: 12rem;
+        font-size: 0.90rem;
+    }
+
+    .btnAddress {
+        padding: 0.4rem;
+    }
+
+    .btnEdit {
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .card{
+        width: 18rem;
+        height: 12rem;
+        font-size: 0.80rem;
+    }
+
+    .btnAddress {
+        padding: 0.25rem;
+    }
+
+    .btnEdit {
+        padding: 0.25rem;
+    }
+}
