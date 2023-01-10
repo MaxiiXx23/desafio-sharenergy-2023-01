@@ -14,7 +14,7 @@
 1. Entre na pasta server e rode o comando: *docker-compose up* para iniciar os serviços
 2. Entre na pasta ShareEnergy e rode o comando: *npm run dev*
 
-### Portas dos serviços:
+## Portas dos serviços:
 1. API -> http://localhost:3000
 2. mongo-express -> http://localhost:8081
 3. Documentação da API -> http://localhost:3000/api-docs
